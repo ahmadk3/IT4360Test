@@ -1,0 +1,10 @@
+CREATE SCHEMA `blog` ;
+
+CREATE TABLE `users` (
+  `idusers` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(150) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `password` varchar(256) DEFAULT NULL,
+  PRIMARY KEY (`idusers`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
